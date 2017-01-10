@@ -92,10 +92,10 @@ var CrosswalkWebView = React.createClass({
             null
         );
     },
-    postMessage () {
+    postMessage (data) {
         UIManager.dispatchViewManagerCommand(
             this.getWebViewHandle(),
-            UIManager.RCTWebView.Commands.postMessage,
+            UIManager.CrosswalkWebView.Commands.postMessage,
             [String(data)]
         );
     },
